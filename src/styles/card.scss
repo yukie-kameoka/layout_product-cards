@@ -4,21 +4,21 @@
   border: 1px solid $color-border;
   border-radius: $card-radius;
 
-  font-family: $font-main;
-
   display: flex;
   flex-direction: column;
 
+  font-family: $font-main;
+
   &__image {
+    display: block;
     width: 160px;
     height: 134px;
-    object-fit: contain;
     margin: 0 auto 40px;
-    display: block;
+    object-fit: contain;
   }
 
   &__title {
-    margin-bottom: 4px;
+    margin: 0 0 4px;
 
     font-size: $title-font-size;
     font-weight: 500;
@@ -27,7 +27,11 @@
   }
 
   &__code {
-    margin-bottom: 16px;
+    margin: 0 0 16px;
+
+    font-size: 10px;
+    line-height: 14px;
+    color: $color-secondary;
   }
 
   &__review-container {
@@ -54,6 +58,7 @@
 
   &__price-label {
     font-size: $title-font-size;
+    color: $color-secondary;
   }
 
   &__price {
@@ -63,18 +68,18 @@
   }
 
   &__button {
-    margin-top: auto;
-
-    width: 100%;
-    height: $button-height;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-    background-color: $color-blue;
+    width: 100%;
+    height: $button-height;
+    margin-top: auto;
+
     border: 1px solid transparent;
     border-radius: $card-radius;
+
+    background-color: $color-blue;
 
     color: $color-white;
     font-size: $button-font-size;
@@ -89,8 +94,8 @@
 
     &:hover {
       background-color: $color-white;
-      color: $color-blue;
       border-color: $color-blue;
+      color: $color-blue;
     }
   }
 }
